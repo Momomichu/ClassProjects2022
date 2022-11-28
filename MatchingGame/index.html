@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Matching Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
+<!-- cant add bootstrap messes up java :C -->
+  
+  </head>
+  <body>
+
+<!----- -------->
+
+
+<div  class="cutscene" >
+  
+  <video id="ahri"> <source type="video/mp4"  src="img/ahri cutscene.mp4"></video>
+  <video id="xayah"> <source type="video/mp4"  src="img/xayah cutscene.mp4"></video>
+  <video id="rakan"> <source type="video/mp4"  src="img/rakan cutscene.mp4"></video>
+  <video id="jinx"> <source type="video/mp4"  src="img/jinx cutscene.mp4"></video>
+  <video id="kaisa"> <source type="video/mp4"  src="img/kaisa cutscene.mp4"></video>
+  <video id="akali"> <source type="video/mp4"  src="img/akali cutscene.mp4"></video>
+</div>
+
+
+
+
+
+<!----- -------->
+
+    
+    
+    
+    <video autoplay muted loop id="myVideo">
+  <source src="audio/starguardian.mp4" type="video/mp4">
+</video>
+
+<!--  <embed src="audio/song.mp3" loop="true" autostart="true" height="0" class="working">
+ -->
+    <audio src="audio/begin.mp3" height="0" id= "begin"></audio>
+    <audio id="songbk" src="audio/song.mp3" loop="loop" preload="auto">
+    </audio> 
+    
+    <header class="Target">
+      <h1>Star Guardian Matching Game</h1>
+      <h2>A dark energy approaches Valoran city! Match the star guaurdians to use their power and fight off the darkness without losing your health!</h2>
+    </header>
+
+
+<div class="btn-container" class="fade-in-text">
+<button class="playmusicclass" onclick="playmusic()" id="playintromusic"> Play Music </button>
+</div>
+    
+    <section id="game-container">      
+			<!-- This is where we display the flip and match counters -->
+      <div id="ui-container" class="Target" >
+        <h3>Flips: <span id="flip-count">0</span></h3>
+        <h3>Matches: <span id="match-count">0</span></h3>
+      </div>
+
+      <div class="lineUp">
+<div id="lul">
+    
+   <div  class="Target" id="healthtitle"><h4> Health</h4> </div>
+ </div>
+    
+<div  class="healthbarhtml" style="width:650px;"  id="hb" data-total="10" data-value="550">
+  <div class="bar" >
+  </div>
+</div>
+      </div>
+			<!-- This is where our cards will be rendered -->
+      <div id="card-container" class="fade-in-text">
+ 
+      </div>
+      
+    </section>  
+
+
+
+
+
+    
+     <div id="lol" class="lineUp" id="slidecontrol" class="fade-in-text">
+        <div class="Target"> <h3 >Volume</h3> </div>
+       <input type="range" min="0" max="1" value="1" step="0.1" id="volume-ontrol" class="slide">
+     </div>
+
+
+    
+<div class="btn-container" class="fade-in-text">
+<button class="reset-btn" onclick="resetGame();playreset()" id="resetting"> Reset </button>
+</div>
+
+
+
+    <div class="logos"><img class="lollogo" src="img/LOLicon.png" width="150" height = "60">
+    <img src="img/SGicon.png" width = "150" height = "60"></div>
+   
+    
+		<!--part 3--> <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js" integrity="sha512-xHPfYya0Ac9NYcp0d6YKVnP/n7dcRGiQCsGKC+BMpziXwgg/6VogplMOS+nqUXQIPmtuGwZ25fAcSgtjBxBVfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://bit.ly/3HbMbbF"></script>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+    
+
+
+
+
+  </body>
+</html>
+
